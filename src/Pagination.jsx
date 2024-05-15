@@ -53,9 +53,9 @@ const Pagination = () => {
         </tbody>
       </table>
       <div className="pagination">
-        <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-        <button>{currentPage}</button>
-        <button onClick={nextPage} disabled={currentPage === Math.ceil(data.length / itemsPerPage)}>Next</button>
+        <button className="pagination-button" onClick={prevPage} disabled={currentPage === 1}>Previous</button>
+        <button className="pagination-button" disabled>{currentPage}</button>
+        <button className="pagination-button" onClick={nextPage} disabled={currentPage === Math.ceil(data.length / itemsPerPage)}>Next</button>
       </div>
     </div>
   );
