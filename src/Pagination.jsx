@@ -54,7 +54,7 @@ const Pagination = () => {
       </table>
       <div className="pagination">
         <button className="pagination-button" onClick={prevPage} >Previous</button>
-        <button className="pagination-button" disabled>{currentPage}</button>
+        <button className="pagination-button" >{currentPage}</button>
         <button className="pagination-button" onClick={nextPage} >Next</button>
       </div>
     </div>
